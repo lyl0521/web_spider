@@ -13,6 +13,7 @@ for cookie in cookie_list:
     value = cookie.split('=')[1]
     cookie_dict[key] = value
 
+
 html = requests.get('https://www.douban.com/people/196408600/notes',headers=headers,cookies=cookie_dict)
 print(html.text)
 
